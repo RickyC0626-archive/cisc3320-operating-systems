@@ -1,0 +1,14 @@
+0. Test all successful
+1. Test failed PID allocation
+2. Test failed PID release
+Pick a test to run: 2
+
+====================
+Failed PID Release
+====================
+
+Allocate map for use
+PID map allocated successfully
+
+Try to release a PID that is out of range
+PID 7500 is out of range
