@@ -1,0 +1,23 @@
+0. Test all successful
+1. Test failed PID allocation
+2. Test failed PID release
+Pick a test to run: 0
+
+====================
+Test Successful Routes
+====================
+
+Allocate map for use
+PID map allocated successfully
+
+Allocate a PID to be used
+PID 300 allocated successfully
+
+Release the first PID
+PID 300 released
+
+Release PID 3456
+PID 3456 released
+
+Allocate a PID again to fill up the first vacant spot
+PID 3456 allocated successfully
