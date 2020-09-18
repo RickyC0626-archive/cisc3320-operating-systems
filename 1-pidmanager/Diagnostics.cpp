@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include "Diagnostics.h"
+#include "PidConstants.h"
 
 void Diagnostics::output_result(PidAction action, int testValue)
 {
@@ -29,6 +30,11 @@ void Diagnostics::output_result(PidAction action, int testValue)
             printf("PID %d allocated successfully\n", testValue);
             break;
         case PidRelease:
+            if(testValue < MIN_PID || testValue > MAX_PID)
+            {
+                printf("PID %d is out of range\n", testValue);
+                exit(1);
+            }
             printf("PID %d released\n", testValue);
             break;
         default:
