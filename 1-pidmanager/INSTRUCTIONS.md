@@ -33,6 +33,8 @@ int allocate_pid();
 
 /**
  * Releases a pid
+ * 
+ * @param pid ID of the process to be released
  */
 void release_pid(int pid);
 ``` 
