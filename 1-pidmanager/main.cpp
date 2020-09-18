@@ -9,12 +9,14 @@
 #include "Diagnostics.h"
 
 void success_all();
+void fail_pid_allocate();
 
 Diagnostics d;
 
 int main()
 {
     success_all();
+    fail_pid_allocate();
 
     return 0;
 }
@@ -23,7 +25,7 @@ void success_all()
 {
     PidManager manager;
 
-    printf("Test Successful Routes\n====================\n");
+    printf("\n====================\nTest Successful Routes\n====================\n");
 
     printf("\nAllocate map for use\n");
     d.output_result(PidAction::MapAllocation, manager.allocate_map());
@@ -49,4 +51,28 @@ void success_all()
     printf("\nAllocate a PID again to fill up the first vacant spot\n");
     int PID3 = manager.allocate_pid();
     d.output_result(PidAction::PidAllocation, PID3);
+}
+
+void fail_pid_allocate()
+{
+    PidManager manager;
+
+    printf("\n====================\nFailed PID Allocation\n====================\n");
+
+    printf("\nAllocate map for use\n");
+    d.output_result(PidAction::MapAllocation, manager.allocate_map());
+
+    // Allocate PID 4699 times
+    for(int i = 0; i < 4699; i++)
+    {
+        manager.allocate_pid();
+    }
+
+    printf("\nAllocate the final PID\n");
+    int PID = manager.allocate_pid();
+    d.output_result(PidAction::PidAllocation, PID);
+
+    printf("\nTry to allocate a PID again\n");
+    int PID2 = manager.allocate_pid();
+    d.output_result(PidAction::PidAllocation, PID2);
 }
