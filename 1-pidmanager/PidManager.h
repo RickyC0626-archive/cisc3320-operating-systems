@@ -7,20 +7,12 @@
  */
 
 #include <array>
+#include "PidConstants.h"
 
 // Include guard to prevent multiple inclusions of this header file
 // Include once, ignore all other inclusions
 #ifndef PIDMANAGER_H
 #define PIDMANAGER_H
-
-/**
- * Minimum ID value a process can have
- */
-#define MIN_PID 300
-/**
- * Maximum ID value a process can have
- */
-#define MAX_PID 5000
 
 /**
  * Manages the allocation and release of PIDs
