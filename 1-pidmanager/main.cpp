@@ -5,18 +5,40 @@
  * @author Ricky Chon
  */
 
+#include <iostream>
 #include "PidManager.h"
 #include "Diagnostics.h"
 
 void success_all();
 void fail_pid_allocate();
+void fail_pid_release();
 
 Diagnostics d;
 
 int main()
 {
-    success_all();
-    fail_pid_allocate();
+    int choice;
+
+    printf("0. Test all successful\n");
+    printf("1. Test failed PID allocation\n");
+    printf("2. Test failed PID release\n");
+    printf("Pick a test to run: ");
+    std::cin >> choice;
+
+    switch(choice)
+    {
+        case 0:
+            success_all();
+            break;
+        case 1:
+            fail_pid_allocate();
+            break;
+        case 2:
+            fail_pid_release();
+            break;
+        default:
+            break;
+    }
 
     return 0;
 }
@@ -75,4 +97,18 @@ void fail_pid_allocate()
     printf("\nTry to allocate a PID again\n");
     int PID2 = manager.allocate_pid();
     d.output_result(PidAction::PidAllocation, PID2);
+}
+
+void fail_pid_release()
+{
+    PidManager manager;
+
+    printf("\n====================\nFailed PID Release\n====================\n");
+
+    printf("\nAllocate map for use\n");
+    d.output_result(PidAction::MapAllocation, manager.allocate_map());
+
+    printf("\nTry to release a PID that is out of range\n");
+    manager.release_pid(7500);
+    d.output_result(PidAction::PidRelease, 7500);
 }
