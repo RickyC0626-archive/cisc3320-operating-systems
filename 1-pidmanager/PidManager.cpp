@@ -37,5 +37,5 @@ int PidManager::allocate_pid()
 
 void PidManager::release_pid(int pid)
 {
-    if(pid > MIN_PID && pid < MAX_PID) pid_map[pid - MIN_PID] = 0;
+    if(pid >= MIN_PID && pid <= MAX_PID) pid_map[pid - MIN_PID] = 0;
 }
