@@ -5,37 +5,24 @@
  * @author Ricky Chon
  */
 
-#include <cstdlib>
 #include "PidManager.h"
+#include "Diagnostics.h"
 
+Diagnostics d;
 PidManager manager;
 
 int main()
 {
     printf("Allocate map for use\n");
-    int mapSuccess = manager.allocate_map();
-
-    if(mapSuccess == -1)
-    {
-        printf("Unsuccessful PID map allocation\n");
-        exit(1);
-    }
-    else printf("PID map allocated successfully\n");
+    d.output_result(PidAction::MapAllocation, manager.allocate_map());
 
     printf("\nAllocate a PID to be used\n");
     int PID = manager.allocate_pid();
-
-    if(PID == -1)
-    {
-        printf("Unsuccessful PID allocation\n");
-        exit(1);
-    }
-    else printf("PID %d allocated successfully\n", PID);
+    d.output_result(PidAction::PidAllocation, PID);
 
     printf("\nRelease a PID\n");
     manager.release_pid(PID);
-
-    printf("PID %d released\n", PID);
+    d.output_result(PidAction::PidRelease, PID);
 
     return 0;
 }

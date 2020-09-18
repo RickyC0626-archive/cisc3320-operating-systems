@@ -6,6 +6,8 @@
  * @author Ricky Chon
  */
 
+#include <stdio.h>
+
 #ifndef DIAGNOSTICS_H
 #define DIAGNOSTICS_H
 

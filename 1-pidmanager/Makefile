@@ -14,15 +14,15 @@
 # Example: CC = g++
 
 # Target: pidmang
-# Prereqs: main.o and PidManager.o
+# Prereqs: main.o, PidManager.o and Diagnostics.o
 # Recipe: run linker on objects and create pidmang executable
-pidmang: main.o PidManager.o
-	$(CXX) -o pidmang main.o PidManager.o
+pidmang: main.o PidManager.o Diagnostics.o
+	$(CXX) -o pidmang main.o PidManager.o Diagnostics.o
 
 # Target: main.o
-# Prereqs: main.cpp and PidManager.h
+# Prereqs: main.cpp, PidManager.h and Diagnostics.h
 # Recipe: compile main.cpp but don't run linker yet
-main.o: main.cpp PidManager.h
+main.o: main.cpp PidManager.h Diagnostics.h
 	$(CXX) -c main.cpp
 
 # Target: PidManager.o
@@ -30,6 +30,12 @@ main.o: main.cpp PidManager.h
 # Recipe: compile PidManager.cpp but don't run linker yet
 PidManager.o: PidManager.cpp PidManager.h
 	$(CXX) -c PidManager.cpp
+
+# Target: Diagnostics.o
+# Prereqs: Diagnostics.cpp and Diagnostics.h
+# Recipe: compile Diagnostics.cpp but don't run linker yet
+Diagnostics.o: Diagnostics.cpp Diagnostics.h
+	$(CXX) -c Diagnostics.cpp
 
 # Cleans up object files
 clean:
