@@ -12,6 +12,7 @@
 void success_all();
 void fail_pid_allocate();
 void fail_pid_release();
+void multithread_test();
 
 Diagnostics d;
 
@@ -22,6 +23,7 @@ int main()
     printf("0. Test all successful\n");
     printf("1. Test failed PID allocation\n");
     printf("2. Test failed PID release\n");
+    printf("3. Test multi-threading support\n");
     printf("Pick a test to run: ");
     std::cin >> choice;
 
@@ -35,6 +37,9 @@ int main()
             break;
         case 2:
             fail_pid_release();
+            break;
+        case 3:
+            multithread_test();
             break;
         default:
             break;
@@ -111,4 +116,9 @@ void fail_pid_release()
     printf("\nTry to release a PID that is out of range\n");
     manager.release_pid(7500);
     d.output_result(PidAction::PidRelease, 7500);
+}
+
+void multithread_test()
+{
+
 }
