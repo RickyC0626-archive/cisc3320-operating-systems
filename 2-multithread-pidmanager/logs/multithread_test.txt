@@ -1,0 +1,914 @@
+0. Test all successful
+1. Test failed PID allocation
+2. Test failed PID release
+3. Test multi-threading support
+Pick a test to run: 3
+
+====================
+Multi-Thread Test
+====================
+
+Allocate PID map for use
+PID map allocated successfully
+MAIN: Created thread 0.
+MAIN: Created thread 1.
+THREAD 0: Started.
+THREAD 0: Requesting PID
+PID 300 allocated successfully
+THREAD 0: Sleeping for 1383ms.
+MAIN: Created thread 2.
+THREAD 1: Started.
+THREAD 1: Requesting PID
+PID 301 allocated successfully
+THREAD 1: Sleeping for 4386ms.
+MAIN: Created thread 3.
+THREAD 2: Started.
+THREAD 2: Requesting PID
+PID 302 allocated successfully
+THREAD 2: Sleeping for 2777ms.
+MAIN: Created thread 4.
+THREAD 3: Started.
+THREAD 3: Requesting PID
+PID 303 allocated successfully
+THREAD 3: Sleeping for 2415ms.
+MAIN: Created thread 5.
+THREAD 4: Started.
+THREAD 4: Requesting PID
+PID 304 allocated successfully
+THREAD 4: Sleeping for 793ms.
+MAIN: Created thread 6.
+THREAD 5: Started.
+THREAD 5: Requesting PID
+PID 305 allocated successfully
+THREAD 5: Sleeping for 1335ms.
+MAIN: Created thread 7.
+THREAD 6: Started.
+THREAD 6: Requesting PID
+MAIN: Created thread 8.
+PID 306 allocated successfully
+THREAD 6: Sleeping for 2886ms.
+THREAD 7: Started.
+THREAD 7: Requesting PID
+PID 307 allocated successfully
+THREAD 7: Sleeping for 2492ms.
+MAIN: Created thread 9.
+THREAD 8: Started.
+THREAD 8: Requesting PID
+PID 308 allocated successfully
+THREAD 8: Sleeping for 1649ms.
+MAIN: Created thread 10.
+MAIN: Created thread 11.
+MAIN: Created thread 12.
+THREAD 10: Started.
+MAIN: Created thread 13.
+THREAD 11: Started.
+MAIN: Created thread 14.
+THREAD 10: Requesting PID
+PID 309 allocated successfully
+THREAD 14: Started.
+THREAD 14: Requesting PID
+PID 310 allocated successfully
+THREAD 14: Sleeping for 3763ms.
+THREAD 10: Sleeping for 3921ms.
+THREAD 11: Requesting PID
+PID 311 allocated successfully
+THREAD 11: Sleeping for 3862ms.
+THREAD 9: Started.
+THREAD 9: Requesting PID
+PID 312 allocated successfully
+THREAD 9: Sleeping for 2559ms.
+THREAD 12: Started.
+THREAD 12: Requesting PID
+PID 313 allocated successfully
+THREAD 12: Sleeping for 4527ms.
+MAIN: Created thread 15.
+THREAD 13: Started.
+THREAD 13: Requesting PID
+PID 314 allocated successfully
+THREAD 13: Sleeping for 4690ms.
+MAIN: Created thread 16.
+MAIN: Created thread 17.
+MAIN: Created thread 18.
+THREAD 15: Started.
+THREAD 15: Requesting PID
+PID 315 allocated successfully
+MAIN: Created thread 19.
+THREAD 15: Sleeping for 1926ms.
+THREAD 18: Started.
+THREAD 18: Requesting PID
+PID 316 allocated successfully
+THREAD 16: Started.
+THREAD 16: Requesting PID
+PID 317 allocated successfully
+THREAD 16: Sleeping for 2172ms.
+THREAD 18: Sleeping for 2426ms.
+THREAD 19: Started.
+THREAD 19: Requesting PID
+PID 318 allocated successfully
+THREAD 19: Sleeping for 4236ms.
+THREAD 17: Started.
+THREAD 17: Requesting PID
+PID 319 allocated successfully
+THREAD 17: Sleeping for 2540ms.
+MAIN: Created thread 20.
+MAIN: Created thread 21.
+MAIN: Created thread 22.
+THREAD 21: Started.
+THREAD 22: Started.
+MAIN: Created thread 23.
+THREAD 20: Started.
+THREAD 21: Requesting PID
+PID 320 allocated successfully
+THREAD 21: Sleeping for 4711ms.
+MAIN: Created thread 24.
+THREAD 22: Requesting PID
+PID 321 allocated successfully
+THREAD 22: Sleeping for 2567ms.
+THREAD 23: Started.
+THREAD 23: Requesting PID
+PID 322 allocated successfully
+THREAD 23: Sleeping for 929ms.
+THREAD 20: Requesting PID
+PID 323 allocated successfully
+THREAD 20: Sleeping for 868ms.
+MAIN: Created thread 25.
+THREAD 24: Started.
+THREAD 24: Requesting PID
+PID 324 allocated successfully
+THREAD 24: Sleeping for 1282ms.
+MAIN: Created thread 26.
+THREAD 25: Started.
+THREAD 25: Requesting PID
+PID 325 allocated successfully
+THREAD 25: Sleeping for 1030ms.
+MAIN: Created thread 27.
+THREAD 26: Started.
+THREAD 26: Requesting PID
+PID 326 allocated successfully
+THREAD 26: Sleeping for 2362ms.
+MAIN: Created thread 28.
+THREAD 27: Started.
+THREAD 27: Requesting PID
+PID 327 allocated successfully
+THREAD 27: Sleeping for 3123ms.
+MAIN: Created thread 29.
+MAIN: Created thread 30.
+THREAD 29: Started.
+THREAD 29: Requesting PID
+PID 328 allocated successfully
+THREAD 29: Sleeping for 2067ms.
+MAIN: Created thread 31.
+THREAD 30: Started.
+THREAD 30: Requesting PID
+PID 329 allocated successfully
+THREAD 30: Sleeping for 1635ms.
+MAIN: Created thread 32.
+THREAD 31: Started.
+THREAD 31: Requesting PID
+PID 330 allocated successfully
+THREAD 31: Sleeping for 4429ms.
+MAIN: Created thread 33.
+THREAD 32: Started.
+THREAD 32: Requesting PID
+PID 331 allocated successfully
+THREAD 32: Sleeping for 4802ms.
+MAIN: Created thread 34.
+THREAD 33: Started.
+THREAD 33: Requesting PID
+PID 332 allocated successfully
+THREAD 33: Sleeping for 1022ms.
+MAIN: Created thread 35.
+THREAD 34: Started.
+THREAD 34: Requesting PID
+PID 333 allocated successfully
+THREAD 34: Sleeping for 4058ms.
+MAIN: Created thread 36.
+THREAD 35: Started.
+THREAD 35: Requesting PID
+PID 334 allocated successfully
+THREAD 35: Sleeping for 4069ms.
+MAIN: Created thread 37.
+THREAD 36: Started.
+THREAD 36: Requesting PID
+PID 335 allocated successfully
+THREAD 36: Sleeping for 3167ms.
+MAIN: Created thread 38.
+THREAD 37: Started.
+THREAD 37: Requesting PID
+PID 336 allocated successfully
+THREAD 37: Sleeping for 4893ms.
+MAIN: Created thread 39.
+THREAD 38: Started.
+THREAD 38: Requesting PID
+PID 337 allocated successfully
+THREAD 38: Sleeping for 1956ms.
+MAIN: Created thread 40.
+THREAD 39: Started.
+THREAD 39: Requesting PID
+PID 338 allocated successfully
+THREAD 39: Sleeping for 2511ms.
+MAIN: Created thread 41.
+THREAD 40: Started.
+THREAD 40: Requesting PID
+PID 339 allocated successfully
+THREAD 40: Sleeping for 1542ms.
+MAIN: Created thread 42.
+THREAD 41: Started.
+THREAD 41: Requesting PID
+PID 340 allocated successfully
+THREAD 41: Sleeping for 2729ms.
+MAIN: Created thread 43.
+THREAD 42: Started.
+THREAD 42: Requesting PID
+PID 341 allocated successfully
+THREAD 42: Sleeping for 1373ms.
+MAIN: Created thread 44.
+THREAD 43: Started.
+THREAD 43: Requesting PID
+PID 342 allocated successfully
+THREAD 43: Sleeping for 2921ms.
+MAIN: Created thread 45.
+THREAD 44: Started.
+THREAD 44: Requesting PID
+PID 343 allocated successfully
+THREAD 44: Sleeping for 2419ms.
+MAIN: Created thread 46.
+THREAD 45: Started.
+THREAD 45: Requesting PID
+PID 344 allocated successfully
+THREAD 45: Sleeping for 784ms.
+MAIN: Created thread 47.
+THREAD 46: Started.
+THREAD 28: Started.
+THREAD 28: Requesting PID
+PID 345 allocated successfully
+THREAD 28: Sleeping for 1198ms.
+THREAD 47: Started.
+THREAD 47: Requesting PID
+PID 346 allocated successfully
+THREAD 47: Sleeping for 2824ms.
+THREAD 46: Requesting PID
+PID 347 allocated successfully
+THREAD 46: Sleeping for 3537ms.
+MAIN: Created thread 48.
+MAIN: Created thread 49.
+MAIN: Created thread 50.
+THREAD 48: Started.
+THREAD 49: Started.
+THREAD 48: Requesting PID
+THREAD 49: Requesting PID
+PID 349 allocated successfully
+THREAD 49: Sleeping for 2870ms.
+MAIN: Created thread 51.
+THREAD 50: Started.
+THREAD 50: Requesting PID
+PID 350 allocated successfully
+THREAD 50: Sleeping for 3913ms.
+MAIN: Created thread 52.
+THREAD 51: Started.
+THREAD 51: Requesting PID
+PID 351 allocated successfully
+THREAD 51: Sleeping for 2526ms.
+MAIN: Created thread 53.
+THREAD 52: Started.
+THREAD 52: Requesting PID
+PID 352 allocated successfully
+THREAD 52: Sleeping for 591ms.
+MAIN: Created thread 54.
+THREAD 53: Started.
+THREAD 53: Requesting PID
+PID 353 allocated successfully
+THREAD 53: Sleeping for 1480ms.
+MAIN: Created thread 55.
+THREAD 54: Started.
+THREAD 54: Requesting PID
+PID 354 allocated successfully
+THREAD 54: Sleeping for 2956ms.
+MAIN: Created thread 56.
+THREAD 55: Started.
+THREAD 55: Requesting PID
+PID 355 allocated successfully
+THREAD 55: Sleeping for 1373ms.
+MAIN: Created thread 57.
+THREAD 56: Started.
+THREAD 56: Requesting PID
+PID 356 allocated successfully
+THREAD 56: Sleeping for 3862ms.
+MAIN: Created thread 58.
+THREAD 57: Started.
+THREAD 57: Requesting PID
+PID 357 allocated successfully
+THREAD 57: Sleeping for 2170ms.
+MAIN: Created thread 59.
+THREAD 58: Started.
+THREAD 58: Requesting PID
+PID 358 allocated successfully
+THREAD 58: Sleeping for 3996ms.
+MAIN: Created thread 60.
+THREAD 59: Started.
+THREAD 59: Requesting PID
+PID 359 allocated successfully
+THREAD 59: Sleeping for 2781ms.
+MAIN: Created thread 61.
+THREAD 60: Started.
+THREAD 60: Requesting PID
+PID 360 allocated successfully
+THREAD 60: Sleeping for 3305ms.
+MAIN: Created thread 62.
+THREAD 61: Started.
+THREAD 61: Requesting PID
+PID 361 allocated successfully
+THREAD 61: Sleeping for 3425ms.
+MAIN: Created thread 63.
+THREAD 62: Started.
+THREAD 62: Requesting PID
+PID 362 allocated successfully
+THREAD 62: Sleeping for 2584ms.
+MAIN: Created thread 64.
+THREAD 63: Started.
+THREAD 63: Requesting PID
+PID 363 allocated successfully
+THREAD 63: Sleeping for 3827ms.
+MAIN: Created thread 65.
+THREAD 64: Started.
+THREAD 64: Requesting PID
+PID 364 allocated successfully
+THREAD 64: Sleeping for 4336ms.
+MAIN: Created thread 66.
+THREAD 65: Started.
+THREAD 65: Requesting PID
+PID 365 allocated successfully
+THREAD 65: Sleeping for 3505ms.
+MAIN: Created thread 67.
+THREAD 66: Started.
+THREAD 66: Requesting PID
+PID 366 allocated successfully
+THREAD 66: Sleeping for 3846ms.
+MAIN: Created thread 68.
+THREAD 67: Started.
+THREAD 67: Requesting PID
+PID 367 allocated successfully
+THREAD 67: Sleeping for 4229ms.
+MAIN: Created thread 69.
+THREAD 68: Started.
+THREAD 68: Requesting PID
+PID 368 allocated successfully
+THREAD 68: Sleeping for 2313ms.
+MAIN: Created thread 70.
+THREAD 69: Started.
+THREAD 69: Requesting PID
+PID 369 allocated successfully
+THREAD 69: Sleeping for 1357ms.
+MAIN: Created thread 71.
+THREAD 70: Started.
+THREAD 70: Requesting PID
+PID 370 allocated successfully
+THREAD 70: Sleeping for 2624ms.
+MAIN: Created thread 72.
+THREAD 71: Started.
+THREAD 71: Requesting PID
+PID 371 allocated successfully
+THREAD 71: Sleeping for 1895ms.
+MAIN: Created thread 73.
+THREAD 72: Started.
+THREAD 72: Requesting PID
+PID 372 allocated successfully
+THREAD 72: Sleeping for 4082ms.
+MAIN: Created thread 74.
+THREAD 73: Started.
+THREAD 73: Requesting PID
+PID 373 allocated successfully
+THREAD 73: Sleeping for 545ms.
+MAIN: Created thread 75.
+THREAD 74: Started.
+THREAD 74: Requesting PID
+PID 374 allocated successfully
+THREAD 74: Sleeping for 3814ms.
+MAIN: Created thread 76.
+THREAD 75: Started.
+THREAD 75: Requesting PID
+PID 375 allocated successfully
+THREAD 75: Sleeping for 4367ms.
+MAIN: Created thread 77.
+THREAD 76: Started.
+THREAD 76: Requesting PID
+PID 376 allocated successfully
+THREAD 76: Sleeping for 934ms.
+MAIN: Created thread 78.
+THREAD 77: Started.
+THREAD 77: Requesting PID
+PID 377 allocated successfully
+THREAD 77: Sleeping for 1864ms.
+MAIN: Created thread 79.
+THREAD 78: Started.
+THREAD 78: Requesting PID
+PID 378 allocated successfully
+THREAD 78: Sleeping for 4043ms.
+MAIN: Created thread 80.
+THREAD 79: Started.
+THREAD 79: Requesting PID
+PID 379 allocated successfully
+THREAD 79: Sleeping for 3250ms.
+MAIN: Created thread 81.
+THREAD 80: Started.
+THREAD 80: Requesting PID
+PID 380 allocated successfully
+THREAD 80: Sleeping for 1587ms.
+MAIN: Created thread 82.
+THREAD 81: Started.
+THREAD 81: Requesting PID
+PID 381 allocated successfully
+THREAD 81: Sleeping for 4808ms.
+MAIN: Created thread 83.
+THREAD 82: Started.
+THREAD 82: Requesting PID
+PID 382 allocated successfully
+THREAD 82: Sleeping for 776ms.
+MAIN: Created thread 84.
+THREAD 83: Started.
+THREAD 83: Requesting PID
+PID 383 allocated successfully
+THREAD 83: Sleeping for 1678ms.
+MAIN: Created thread 85.
+THREAD 84: Started.
+THREAD 84: Requesting PID
+PID 384 allocated successfully
+THREAD 84: Sleeping for 1288ms.
+MAIN: Created thread 86.
+THREAD 85: Started.
+THREAD 85: Requesting PID
+PID 385 allocated successfully
+THREAD 85: Sleeping for 584ms.
+MAIN: Created thread 87.
+THREAD 86: Started.
+THREAD 86: Requesting PID
+PID 386 allocated successfully
+THREAD 86: Sleeping for 4403ms.
+MAIN: Created thread 88.
+THREAD 87: Started.
+THREAD 87: Requesting PID
+PID 387 allocated successfully
+THREAD 87: Sleeping for 4651ms.
+MAIN: Created thread 89.
+THREAD 88: Started.
+THREAD 88: Requesting PID
+PID 388 allocated successfully
+THREAD 88: Sleeping for 2254ms.
+MAIN: Created thread 90.
+THREAD 89: Started.
+PID 348 allocated successfully
+THREAD 48: Sleeping for 2815ms.
+THREAD 89: Requesting PID
+THREAD 90: Started.
+THREAD 90: Requesting PID
+PID 389 allocated successfully
+THREAD 90: Sleeping for 2432ms.
+PID 390 allocated successfully
+THREAD 89: Sleeping for 3399ms.
+MAIN: Created thread 91.
+MAIN: Created thread 92.
+THREAD 91: Started.
+THREAD 91: Requesting PID
+PID 391 allocated successfully
+THREAD 91: Sleeping for 560ms.
+MAIN: Created thread 93.
+THREAD 92: Started.
+THREAD 92: Requesting PID
+PID 392 allocated successfully
+THREAD 92: Sleeping for 3676ms.
+MAIN: Created thread 94.
+THREAD 93: Started.
+THREAD 93: Requesting PID
+PID 393 allocated successfully
+THREAD 93: Sleeping for 1868ms.
+MAIN: Created thread 95.
+THREAD 94: Started.
+THREAD 94: Requesting PID
+PID 394 allocated successfully
+THREAD 94: Sleeping for 1239ms.
+MAIN: Created thread 96.
+THREAD 95: Started.
+THREAD 95: Requesting PID
+PID 395 allocated successfully
+THREAD 95: Sleeping for 3012ms.
+MAIN: Created thread 97.
+THREAD 96: Started.
+THREAD 96: Requesting PID
+PID 396 allocated successfully
+THREAD 96: Sleeping for 2226ms.
+MAIN: Created thread 98.
+THREAD 97: Started.
+THREAD 97: Requesting PID
+PID 397 allocated successfully
+THREAD 97: Sleeping for 4586ms.
+MAIN: Created thread 99.
+THREAD 98: Started.
+THREAD 98: Requesting PID
+PID 398 allocated successfully
+THREAD 98: Sleeping for 4094ms.
+Spawning 100 threads and waiting for them to join.
+MAIN: Joined thread 0.
+THREAD 99: Started.
+THREAD 99: Requesting PID
+PID 399 allocated successfully
+THREAD 99: Sleeping for 4039ms.
+THREAD 73: Releasing PID 373
+PID 373 released
+THREAD 73: Ended.
+THREAD 91: Releasing PID 391
+PID 391 released
+THREAD 91: Ended.
+THREAD 52: Releasing PID 352
+PID 352 released
+THREAD 52: Ended.
+THREAD 85: Releasing PID 385
+PID 385 released
+THREAD 85: Ended.
+THREAD 82: Releasing PID 382
+PID 382 released
+THREAD 82: Ended.
+THREAD 45: Releasing PID 344
+PID 344 released
+THREAD 45: Ended.
+THREAD 4: Releasing PID 304
+PID 304 released
+THREAD 4: Ended.
+THREAD 20: Releasing PID 323
+PID 323 released
+THREAD 20: Ended.
+THREAD 23: Releasing PID 322
+PID 322 released
+THREAD 23: Ended.
+THREAD 76: Releasing PID 376
+PID 376 released
+THREAD 76: Ended.
+THREAD 33: Releasing PID 332
+PID 332 released
+THREAD 33: Ended.
+THREAD 25: Releasing PID 325
+PID 325 released
+THREAD 25: Ended.
+THREAD 28: Releasing PID 345
+PID 345 released
+THREAD 28: Ended.
+THREAD 94: Releasing PID 394
+PID 394 released
+THREAD 94: Ended.
+THREAD 24: Releasing PID 324
+PID 324 released
+THREAD 24: Ended.
+THREAD 84: Releasing PID 384
+PID 384 released
+THREAD 84: Ended.
+THREAD 5: Releasing PID 305
+PID 305 released
+THREAD 5: Ended.
+THREAD 69: Releasing PID 369
+PID 369 released
+THREAD 69: Ended.
+THREAD 42: Releasing PID 341
+PID 341 released
+THREAD 42: Ended.
+THREAD 55: Releasing PID 355
+PID 355 released
+THREAD 55: Ended.
+THREAD 0: Releasing PID 300
+PID 300 released
+THREAD 0: Ended.
+MAIN: Joined thread 1.
+THREAD 53: Releasing PID 353
+PID 353 released
+THREAD 53: Ended.
+THREAD 40: Releasing PID 339
+PID 339 released
+THREAD 40: Ended.
+THREAD 80: Releasing PID 380
+PID 380 released
+THREAD 80: Ended.
+THREAD 30: Releasing PID 329
+PID 329 released
+THREAD 30: Ended.
+THREAD 8: Releasing PID 308
+PID 308 released
+THREAD 8: Ended.
+THREAD 83: Releasing PID 383
+PID 383 released
+THREAD 83: Ended.
+THREAD 77: Releasing PID 377
+PID 377 released
+THREAD 77: Ended.
+THREAD 93: Releasing PID 393
+PID 393 released
+THREAD 93: Ended.
+THREAD 71: Releasing PID 371
+PID 371 released
+THREAD 71: Ended.
+THREAD 15: Releasing PID 315
+PID 315 released
+THREAD 15: Ended.
+THREAD 38: Releasing PID 337
+PID 337 released
+THREAD 38: Ended.
+THREAD 29: Releasing PID 328
+PID 328 released
+THREAD 29: Ended.
+THREAD 16: Releasing PID 317
+PID 317 released
+THREAD 16: Ended.
+THREAD 57: Releasing PID 357
+PID 357 released
+THREAD 57: Ended.
+THREAD 96: Releasing PID 396
+PID 396 released
+THREAD 96: Ended.
+THREAD 88: Releasing PID 388
+PID 388 released
+THREAD 88: Ended.
+THREAD 68: Releasing PID 368
+PID 368 released
+THREAD 68: Ended.
+THREAD 26: Releasing PID 326
+PID 326 released
+THREAD 26: Ended.
+THREAD 3: Releasing PID 303
+PID 303 released
+THREAD 3: Ended.
+THREAD 44: Releasing PID 343
+PID 343 released
+THREAD 44: Ended.
+THREAD 18: Releasing PID 316
+PID 316 released
+THREAD 18: Ended.
+THREAD 90: Releasing PID 389
+PID 389 released
+THREAD 90: Ended.
+THREAD 7: Releasing PID 307
+PID 307 released
+THREAD 7: Ended.
+THREAD 39: Releasing PID 338
+PID 338 released
+THREAD 39: Ended.
+THREAD 51: Releasing PID 351
+PID 351 released
+THREAD 51: Ended.
+THREAD 17: Releasing PID 319
+PID 319 released
+THREAD 17: Ended.
+THREAD 9: Releasing PID 312
+PID 312 released
+THREAD 9: Ended.
+THREAD 22: Releasing PID 321
+PID 321 released
+THREAD 22: Ended.
+THREAD 62: Releasing PID 362
+PID 362 released
+THREAD 62: Ended.
+THREAD 70: Releasing PID 370
+PID 370 released
+THREAD 70: Ended.
+THREAD 41: Releasing PID 340
+PID 340 released
+THREAD 41: Ended.
+THREAD 2: Releasing PID 302
+PID 302 released
+THREAD 2: Ended.
+THREAD 59: Releasing PID 359
+PID 359 released
+THREAD 59: Ended.
+THREAD 48: Releasing PID 348
+PID 348 released
+THREAD 48: Ended.
+THREAD 47: Releasing PID 346
+PID 346 released
+THREAD 47: Ended.
+THREAD 49: Releasing PID 349
+PID 349 released
+THREAD 49: Ended.
+THREAD 6: Releasing PID 306
+PID 306 released
+THREAD 6: Ended.
+THREAD 43: Releasing PID 342
+PID 342 released
+THREAD 43: Ended.
+THREAD 54: Releasing PID 354
+PID 354 released
+THREAD 54: Ended.
+THREAD 95: Releasing PID 395
+PID 395 released
+THREAD 95: Ended.
+THREAD 27: Releasing PID 327
+PID 327 released
+THREAD 27: Ended.
+THREAD 36: Releasing PID 335
+PID 335 released
+THREAD 36: Ended.
+THREAD 79: Releasing PID 379
+PID 379 released
+THREAD 79: Ended.
+THREAD 60: Releasing PID 360
+PID 360 released
+THREAD 60: Ended.
+THREAD 89: Releasing PID 390
+PID 390 released
+THREAD 89: Ended.
+THREAD 61: Releasing PID 361
+PID 361 released
+THREAD 61: Ended.
+THREAD 65: Releasing PID 365
+PID 365 released
+THREAD 65: Ended.
+THREAD 46: Releasing PID 347
+PID 347 released
+THREAD 46: Ended.
+THREAD 92: Releasing PID 392
+PID 392 released
+THREAD 92: Ended.
+THREAD 14: Releasing PID 310
+PID 310 released
+THREAD 14: Ended.
+THREAD 74: Releasing PID 374
+PID 374 released
+THREAD 74: Ended.
+THREAD 63: Releasing PID 363
+PID 363 released
+THREAD 63: Ended.
+THREAD 66: Releasing PID 366
+PID 366 released
+THREAD 66: Ended.
+THREAD 11: Releasing PID 311
+PID 311 released
+THREAD 11: Ended.
+THREAD 56: Releasing PID 356
+PID 356 released
+THREAD 56: Ended.
+THREAD 50: Releasing PID 350
+PID 350 released
+THREAD 50: Ended.
+THREAD 10: Releasing PID 309
+PID 309 released
+THREAD 10: Ended.
+THREAD 58: Releasing PID 358
+PID 358 released
+THREAD 58: Ended.
+THREAD 78: Releasing PID 378
+PID 378 released
+THREAD 78: Ended.
+THREAD 99: Releasing PID 399
+PID 399 released
+THREAD 99: Ended.
+THREAD 34: Releasing PID 333
+PID 333 released
+THREAD 34: Ended.
+THREAD 35: Releasing PID 334
+PID 334 released
+THREAD 35: Ended.
+THREAD 72: Releasing PID 372
+PID 372 released
+THREAD 72: Ended.
+THREAD 98: Releasing PID 398
+PID 398 released
+THREAD 98: Ended.
+THREAD 19: Releasing PID 318
+PID 318 released
+THREAD 19: Ended.
+THREAD 67: Releasing PID 367
+PID 367 released
+THREAD 67: Ended.
+THREAD 64: Releasing PID 364
+PID 364 released
+THREAD 64: Ended.
+THREAD 75: Releasing PID 375
+PID 375 released
+THREAD 75: Ended.
+THREAD 1: Releasing PID 301
+PID 301 released
+THREAD 1: Ended.
+MAIN: Joined thread 2.
+MAIN: Joined thread 3.
+MAIN: Joined thread 4.
+MAIN: Joined thread 5.
+MAIN: Joined thread 6.
+MAIN: Joined thread 7.
+MAIN: Joined thread 8.
+MAIN: Joined thread 9.
+MAIN: Joined thread 10.
+MAIN: Joined thread 11.
+MAIN: Joined thread 12.
+THREAD 86: Releasing PID 386
+PID 386 released
+THREAD 86: Ended.
+THREAD 31: Releasing PID 330
+PID 330 released
+THREAD 31: Ended.
+THREAD 12: Releasing PID 313
+PID 313 released
+THREAD 12: Ended.
+MAIN: Joined thread 13.
+THREAD 97: Releasing PID 397
+PID 397 released
+THREAD 97: Ended.
+THREAD 87: Releasing PID 387
+PID 387 released
+THREAD 87: Ended.
+THREAD 13: Releasing PID 314
+PID 314 released
+THREAD 13: Ended.
+MAIN: Joined thread 14.
+MAIN: Joined thread 15.
+MAIN: Joined thread 16.
+MAIN: Joined thread 17.
+MAIN: Joined thread 18.
+MAIN: Joined thread 19.
+MAIN: Joined thread 20.
+MAIN: Joined thread 21.
+THREAD 21: Releasing PID 320
+PID 320 released
+THREAD 21: Ended.
+MAIN: Joined thread 22.
+MAIN: Joined thread 23.
+MAIN: Joined thread 24.
+MAIN: Joined thread 25.
+MAIN: Joined thread 26.
+MAIN: Joined thread 27.
+MAIN: Joined thread 28.
+MAIN: Joined thread 29.
+MAIN: Joined thread 30.
+MAIN: Joined thread 31.
+MAIN: Joined thread 32.
+THREAD 32: Releasing PID 331
+PID 331 released
+THREAD 32: Ended.
+MAIN: Joined thread 33.
+MAIN: Joined thread 34.
+MAIN: Joined thread 35.
+MAIN: Joined thread 36.
+MAIN: Joined thread 37.
+THREAD 81: Releasing PID 381
+PID 381 released
+THREAD 81: Ended.
+THREAD 37: Releasing PID 336
+PID 336 released
+THREAD 37: Ended.
+MAIN: Joined thread 38.
+MAIN: Joined thread 39.
+MAIN: Joined thread 40.
+MAIN: Joined thread 41.
+MAIN: Joined thread 42.
+MAIN: Joined thread 43.
+MAIN: Joined thread 44.
+MAIN: Joined thread 45.
+MAIN: Joined thread 46.
+MAIN: Joined thread 47.
+MAIN: Joined thread 48.
+MAIN: Joined thread 49.
+MAIN: Joined thread 50.
+MAIN: Joined thread 51.
+MAIN: Joined thread 52.
+MAIN: Joined thread 53.
+MAIN: Joined thread 54.
+MAIN: Joined thread 55.
+MAIN: Joined thread 56.
+MAIN: Joined thread 57.
+MAIN: Joined thread 58.
+MAIN: Joined thread 59.
+MAIN: Joined thread 60.
+MAIN: Joined thread 61.
+MAIN: Joined thread 62.
+MAIN: Joined thread 63.
+MAIN: Joined thread 64.
+MAIN: Joined thread 65.
+MAIN: Joined thread 66.
+MAIN: Joined thread 67.
+MAIN: Joined thread 68.
+MAIN: Joined thread 69.
+MAIN: Joined thread 70.
+MAIN: Joined thread 71.
+MAIN: Joined thread 72.
+MAIN: Joined thread 73.
+MAIN: Joined thread 74.
+MAIN: Joined thread 75.
+MAIN: Joined thread 76.
+MAIN: Joined thread 77.
+MAIN: Joined thread 78.
+MAIN: Joined thread 79.
+MAIN: Joined thread 80.
+MAIN: Joined thread 81.
+MAIN: Joined thread 82.
+MAIN: Joined thread 83.
+MAIN: Joined thread 84.
+MAIN: Joined thread 85.
+MAIN: Joined thread 86.
+MAIN: Joined thread 87.
+MAIN: Joined thread 88.
+MAIN: Joined thread 89.
+MAIN: Joined thread 90.
+MAIN: Joined thread 91.
+MAIN: Joined thread 92.
+MAIN: Joined thread 93.
+MAIN: Joined thread 94.
+MAIN: Joined thread 95.
+MAIN: Joined thread 96.
+MAIN: Joined thread 97.
+MAIN: Joined thread 98.
+MAIN: Joined thread 99.
+All threads joined!
