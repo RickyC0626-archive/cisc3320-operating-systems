@@ -6,14 +6,18 @@
  */
 
 #include <iostream>
+#include <thread>
+#include <chrono>
 #include "PidManager.h"
 #include "Diagnostics.h"
+#include "ThreadConstants.h"
 
 void success_all();
 void fail_pid_allocate();
 void fail_pid_release();
 void multithread_test();
 
+PidManager manager;
 Diagnostics d;
 
 int main()
@@ -50,8 +54,6 @@ int main()
 
 void success_all()
 {
-    PidManager manager;
-
     printf("\n====================\nTest Successful Routes\n====================\n");
 
     printf("\nAllocate map for use\n");
@@ -82,8 +84,6 @@ void success_all()
 
 void fail_pid_allocate()
 {
-    PidManager manager;
-
     printf("\n====================\nFailed PID Allocation\n====================\n");
 
     printf("\nAllocate map for use\n");
@@ -106,8 +106,6 @@ void fail_pid_allocate()
 
 void fail_pid_release()
 {
-    PidManager manager;
-
     printf("\n====================\nFailed PID Release\n====================\n");
 
     printf("\nAllocate map for use\n");
@@ -118,7 +116,52 @@ void fail_pid_release()
     d.output_result(PidAction::PidRelease, 7500);
 }
 
+void exec_process(int t_id)
+{
+    // Random sleep time in the range of 500ms and 5000ms
+    int sleep_time = rand() % 4500 + 500;
+
+    printf("THREAD %d: Started.\n", t_id);
+    printf("THREAD %d: Requesting PID\n", t_id);
+    int PID = manager.allocate_pid();
+    d.output_result(PidAction::PidAllocation, PID);
+
+    printf("THREAD %d: Sleeping for %dms.\n", t_id, sleep_time);
+    std::this_thread::sleep_for(std::chrono::milliseconds(sleep_time));
+
+    printf("THREAD %d: Releasing PID %d\n", t_id, PID);
+    manager.release_pid(PID);
+    d.output_result(PidAction::PidRelease, PID);
+    printf("THREAD %d: Ended.\n", t_id);
+}
+
 void multithread_test()
 {
+    std::thread threads[NUM_THREADS];
 
+    printf("\n====================\nMulti-Thread Test\n====================\n");
+
+    printf("\nAllocate PID map for use\n");
+    d.output_result(PidAction::MapAllocation, manager.allocate_map());
+
+    // Create a bunch of threads execute a single process in each
+    for(int i = 0; i < NUM_THREADS; i++)
+    {
+        printf("MAIN: Created thread %d.\n", i);
+
+        // Now we simulate a single process on the thread
+        // and store it in an array for later use
+        threads[i] = std::thread(exec_process, i);
+    }
+
+    printf("Spawning %d threads and waiting for them to join.\n", NUM_THREADS);
+
+    // Sync all the threads
+    for(int i = 0; i < NUM_THREADS; i++)
+    {
+        printf("MAIN: Joined thread %d.\n", i);
+        threads[i].join();
+    }
+
+    printf("All threads joined!\n");
 }
