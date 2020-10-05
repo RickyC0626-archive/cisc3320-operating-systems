@@ -17,7 +17,7 @@
 # Prereqs: main.o, PidManager.o and Diagnostics.o
 # Recipe: run linker on objects and create pidmang executable
 pidmang: main.o PidManager.o Diagnostics.o
-	$(CXX) -o pidmang main.o PidManager.o Diagnostics.o
+	$(CXX) -o pidmang main.o PidManager.o Diagnostics.o -lpthread
 
 # Target: main.o
 # Prereqs: main.cpp, PidManager.h and Diagnostics.h
