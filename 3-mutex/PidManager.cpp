@@ -28,7 +28,9 @@ int PidManager::allocate_pid()
     {
         if(pid_map[i] == 0)
         {
+            mtx.lock();
             pid_map[i] = 1;
+            mtx.unlock();
             return i + MIN_PID;
         }
     }
@@ -37,5 +39,10 @@ int PidManager::allocate_pid()
 
 void PidManager::release_pid(int pid)
 {
-    if(pid >= MIN_PID && pid <= MAX_PID) pid_map[pid - MIN_PID] = 0;
+    if(pid >= MIN_PID && pid <= MAX_PID)
+    {
+        mtx.lock();
+        pid_map[pid - MIN_PID] = 0;
+        mtx.unlock();
+    }
 }
