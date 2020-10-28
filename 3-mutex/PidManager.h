@@ -7,6 +7,7 @@
  */
 
 #include <array>
+#include <mutex>
 #include "PidConstants.h"
 
 // Include guard to prevent multiple inclusions of this header file
@@ -27,6 +28,12 @@ class PidManager
          * A value of 1 at the index would indicate unavailability
          */
         std::array<int, MAX_PID - MIN_PID> pid_map;
+
+        /**
+         * Mutex locking mechanism to be used to prevent race conditions
+         * when allocating and releasing PIDs
+         */
+        std::mutex mtx;
     public:
         /**
          * Creates and initializes a data structure for representing PIDs

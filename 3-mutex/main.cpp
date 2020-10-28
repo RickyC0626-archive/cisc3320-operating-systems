@@ -8,7 +8,6 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
-#include <mutex>
 #include "PidManager.h"
 #include "Diagnostics.h"
 #include "ThreadConstants.h"
@@ -204,7 +203,7 @@ void count_mutex(bool useMutex)
     printf("Elapsed Time: %ldms\n", elapsedTime.count());
 }
 
-std::mutex mtx;
+std::mutex mutex;
 
 void start_count(bool useMutex, int countTo)
 {
@@ -212,12 +211,12 @@ void start_count(bool useMutex, int countTo)
     while(i < countTo)
     {
         // Acquire lock
-        if(useMutex) mtx.lock();
+        if(useMutex) mutex.lock();
 
         ++i;
 
         // Release lock
-        if(useMutex) mtx.unlock();
+        if(useMutex) mutex.unlock();
 
         printf("i = %d\n", i);
     }
