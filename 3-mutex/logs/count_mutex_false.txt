@@ -1,0 +1,24 @@
+$ ./pidmang 4
+
+...
+
+i = 990
+i = 991
+i = 992
+i = 993
+i = 994
+i = 995
+i = 996
+i = 997
+i = 998
+i = 999
+i = 1000
+Elapsed Time: 320ms
+
+...
+
+$ ./pidmang 4 | wc -l
+20002
+
+// 10 threads counting to 1,000 is supposed to produce 10,000 lines of text plus our elapsed time
+// Without mutex locking our resources are being accessed twice as much, making it slower
