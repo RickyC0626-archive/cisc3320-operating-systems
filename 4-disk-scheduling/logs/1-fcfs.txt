@@ -1,0 +1,61 @@
+// NUM_REQUESTS at 25
+
+// Running disk scheduler with default head at (NUM_CYLINDERS / 2)
+
+$ ./ds
+1. FCFS (First Come First Serve)
+2. SSTF (Shortest Seek Time First)
+3. SCAN (Elevator)
+4. C-SCAN (Circular Scan)
+5. LOOK (Advanced Elevator)
+6. C-LOOK (Circular LOOK)
+Pick a disk scheduling algorithm: 1
+
+Head: 2500
+25 initial requests
+
+FCFS (First Come First Serve)
+=========================
+Total amount of head movement: 43550
+Seek sequence is: 4383 886 2777 1915 2793 3335 386 492 1649 1421 2362 27 3690 59 2763 3926 540 3426 4172 736 211 368 2567 1429 782
+
+----------------------------------------------------------------------
+
+// Running disk scheduler with head at 0
+
+$ ./ds 0
+1. FCFS (First Come First Serve)
+2. SSTF (Shortest Seek Time First)
+3. SCAN (Elevator)
+4. C-SCAN (Circular Scan)
+5. LOOK (Advanced Elevator)
+6. C-LOOK (Circular LOOK)
+Pick a disk scheduling algorithm: 1
+
+Head: 0
+25 initial requests
+
+FCFS (First Come First Serve)
+=========================
+Total amount of head movement: 46050
+Seek sequence is: 4383 886 2777 1915 2793 3335 386 492 1649 1421 2362 27 3690 59 2763 3926 540 3426 4172 736 211 368 2567 1429 782
+
+----------------------------------------------------------------------
+
+// NUM_REQUESTS at 1000
+
+$ ./ds
+1. FCFS (First Come First Serve)
+2. SSTF (Shortest Seek Time First)
+3. SCAN (Elevator)
+4. C-SCAN (Circular Scan)
+5. LOOK (Advanced Elevator)
+6. C-LOOK (Circular LOOK)
+Pick a disk scheduling algorithm: 1
+
+Head: 2500
+1000 initial requests
+
+FCFS (First Come First Serve)
+=========================
+Total amount of head movement: 1630703
